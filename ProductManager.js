@@ -1,29 +1,89 @@
-class ProductManager{
-    
-    constructor(){
-        this.products=[]
-    }
-
-    addProduct(title,description,price,thumbnail,stock){
-        let id
-        if(this.products.length===0){
-            id=1
-        }else{
-            id=this.products[this.products.length-1].id+1
-        }
-        this.products.push({title,description,price,thumbnail,id,stock})
-    }
-
-    getProductos(){
-        console.log(this.products)
-    }
-
-    getProductById(id){
-        let i = this.products.findIndex(p=>p.id === id);
-        if(i>=0){
-            console.log(this.products[i])
-        }else{
-            console.log("Not found")
-        }
-    }
-}
+[
+  {
+    "title": "Alfajores",
+    "description": "descripcion",
+    "price": 20,
+    "thumbnail": "url",
+    "id": 1,
+    "stock": 4
+  },
+  {
+    "title": "Alfajores",
+    "description": "nueva descripcion",
+    "price": 20,
+    "thumbnail": "url",
+    "id": 2
+  },
+  {
+    "title": "Alfajores",
+    "description": "descripcion",
+    "price": 20,
+    "thumbnail": "url",
+    "id": 4,
+    "stock": 3
+  },
+  {
+    "title": "Alfajores",
+    "description": "descripcion",
+    "price": 20,
+    "thumbnail": "url",
+    "id": 5,
+    "stock": 4
+  },
+  {
+    "title": "Alfajores",
+    "description": "descripcion",
+    "price": 23,
+    "thumbnail": "url",
+    "id": 6,
+    "stock": 3
+  },
+  {
+    "title": "Alfajores",
+    "description": "descripcion",
+    "price": 20,
+    "thumbnail": "url",
+    "id": 7,
+    "stock": 4
+  },
+  {
+    "title": "Alfajores",
+    "description": "descripcion",
+    "price": 23,
+    "thumbnail": "url",
+    "id": 8,
+    "stock": 3
+  },
+  {
+    "title": "Alfajores",
+    "description": "descripcion",
+    "price": 20,
+    "thumbnail": "url",
+    "id": 9,
+    "stock": 4
+  },
+  {
+    "title": "Alfajores",
+    "description": "descripcion",
+    "price": 23,
+    "thumbnail": "url",
+    "id": 10,
+    "stock": 3
+  },
+  {
+    "title": "Alfajores",
+    "description": "descripcion",
+    "price": 20,
+    "thumbnail": "url",
+    "id": 11,
+    "stock": 4
+  },
+  {
+    "title": "Alfajores",
+    "description": "descripcion",
+    "price": 23,
+    "thumbnail": "url",
+    "id": 12,
+    "stock": 3
+  }
+]
