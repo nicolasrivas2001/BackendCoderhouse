@@ -1,6 +1,5 @@
 const fs=require("fs")
-class ProductManager{
-    
+class Carrito{
     constructor(path){
         this.products=[]
         this.path=path
@@ -92,19 +91,4 @@ class ProductManager{
     }
 }
 
-let usuario = new ProductManager("./productManager.js")
-usuario.addProduct({title:"Alfajores",description:"descripcion",price:20,thumbnail:"url",stock:4})
-usuario.addProduct({title:"Alfajores",description:"descripcion",price:23,thumbnail:"url",stock:3})
-usuario.getProducts()
-usuario.getProductById(1)
-usuario.updateProduct(2,{
-    "title": "Alfajores",
-    "description": "nueva descripcion",
-    "price": 20,
-    "thumbnail": "url",
-    "id": 2,
-    "stock":4
-})
-usuario.deleteProduct(2)
-
-
+let carrito = new Carrito("./productManager.js")
